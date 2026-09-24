@@ -71,5 +71,3 @@ class $modify(LevelBrowserLayer) {
 		return true;
 	};
 };
-
-
