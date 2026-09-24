@@ -18,7 +18,9 @@
             "importance": "required"
         }
     ],
-    "links": {
-        "source": "https://github.com/petitfrapo/nomoregrayfilter"
+    "resources": {
+        "sprites" {
+		   "resources/HallTitle.png"
+		   "resources/HallOfFame.png"
     }
 }
