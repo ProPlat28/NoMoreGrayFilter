@@ -14,13 +14,13 @@
 	"dependencies": [
         {
             "id": "geode.node-ids",
-            "version": ">=v1.8.1",
+            "version": ">=v1.23.3",
             "importance": "required"
         }
     ],
     "resources": {
         "sprites" {
-		   "resources/HallTitle.png"
+		   "resources/HallTitle.png",
 		   "resources/HallOfFame.png"
     }
 }
