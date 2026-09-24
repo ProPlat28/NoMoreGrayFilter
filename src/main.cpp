@@ -14,7 +14,7 @@ class $modify(CreatorLayer) {
         auto menu = this->getChildByID("creator-buttons-menu");
         if (!menu) return true;
 
-        auto sprmappacks = CCSprite::createWithSpriteFrameName("HallOfFameButton.png"_spr);
+        auto sprmappacks = CCSprite::createWithSpriteFrameName("HallOfFame.png"_spr);
 
         std::map<std::string, CCSprite*> idsToBtns = {
             { "map-packs-button", sprmappacks },
@@ -22,7 +22,7 @@ class $modify(CreatorLayer) {
 
         for (auto& pair : idsToBtns) {
             auto id = pair.first.c_str();
-            auto superExpertLoaded = (strcmp("versus-button", id) == 0) && Loader::get()->isModLoaded("xanii.super_expert");
+            auto superExpertLoaded = (strcmp("map-packs-button", id) == 0) && Loader::get()->isModLoaded("xanii.super_expert");
 
             if (!menu->getChildByID(id)) continue;
 
