@@ -1,26 +1,29 @@
 {
-	"geode": "5.9.0",
+	"geode": ">=5.0.0",
 	"gd": {
-        "mac": "2.2081",
-        "android": "2.2081",
-        "win": "2.2081"
-    },
+		"mac": "2.2081",
+		"android": "2.2081",
+		"win": "2.2081"
+	},
 	"version": "v1.2.1",
 	"id": "petitfrapo.nomoregrayfilter",
 	"name": "NoMoreGrayFilter",
 	"developer": "PetitFrapo",
 	"description": "Removes the gray filter from the Map and Versus buttons. Cosmetic only, of course.",
-    "tags": ["customization", "offline"],
+	"tags": ["customization", "offline"],
 	"dependencies": [
-        {
-            "id": "geode.node-ids",
-            "version": ">=v1.23.3",
-            "importance": "required"
-        }
-    ],
-    "resources": {
-        "sprites" {
-		   "resources/HallTitle.png",
-		   "resources/HallOfFame.png"
-    }
+		{
+			"id": "geode.node-ids",
+			"version": ">=v1.8.1",
+			"importance": "required"
+		}
+	],
+	"links": {
+		"source": "https://github.com/petitfrapo/nomoregrayfilter"
+	},
+	"resources": {
+		"sprites": [
+			"HallTitle.png"
+		]
+	}
 }
