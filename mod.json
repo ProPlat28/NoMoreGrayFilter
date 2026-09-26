@@ -14,13 +14,9 @@
 	"links": {
         "source": "https://github.com/ProPlat28/Hall-of-Fame"
     },
-	"dependencies": [
-		{
-			"id": "geode.node-ids",
-			"version": ">=v1.23.3",
-			"importance": "required"
-		}
-	],
+	"dependencies": {
+		"geode.node-ids": ">=1.23.3"
+	},
 	"resources": {
 		"sprites": [
 			"resources/*.png"
