@@ -9,7 +9,7 @@
 	"id": "proplat.halloffame",
 	"name": "Hall of Fame",
 	"developer": "Hall of Fame",
-	"description": "Replaces the Map Packs button by Hall of Fame",
+	"description": "Replaces the Map Packs button by Hall of Fame one.",
 	"tags": ["customization", "offline"],
 	"dependencies": [
 		{
