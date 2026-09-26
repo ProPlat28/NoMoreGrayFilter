@@ -69,9 +69,8 @@ class $modify(LevelBrowserLayer) {
                     }
                 }
             }
-
-            if (auto title = CCSprite::create("HallTitle.png"_spr)) {
-                auto winSize = CCDirector::get()->getWinSize();
+        
+            if  auto winSize = CCDirector::get()->getWinSize(); {
                 title->setPosition({winSize.width / 2.f, winSize.height - 25.f});
                 this->addChild(title, 100);
             }
