@@ -14,7 +14,7 @@ class $modify(CreatorLayer) {
         auto menu = this->getChildByID("creator-buttons-menu");
         if (!menu) return true;
 
-        auto sprMapPacks = CCSprite::createWithSpriteFrameName("HallOfFame.png"_spr);
+        auto sprMapPacks = CCSprite::create("HallOfFame.png"_spr);
 
         std::map<std::string, CCSprite*> idsToBtns = {
             { "map-packs-button", sprMapPacks },
