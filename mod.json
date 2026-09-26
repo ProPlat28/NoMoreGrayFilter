@@ -6,16 +6,16 @@
     "win": "2.2081"
   },
   "version": "v1.0.0",
-  "id": "proplat.halloffame",
-  "name": "Hall of Fame",
+  "id": "proplat.map-packs-to-hall-of-fame",
+  "name": "Map Packs to Hall of Fame",
   "developer": "Hall of Fame",
-  "description": "Replaces the Map Packs button by Hall of Fame one.",
+  "description": "Replaces the fuc***g Map Packs button by Hall of Fame one.",
   "tags": [
     "customization",
     "online"
   ],
   "links": {
-    "source": "https://github.com/ProPlat28/Hall-of-Fame"
+    "source": "https://github.com/ProPlat28/Map-Packs-to-Hall-of-Fame"
   },
   "dependencies": {
     "geode.node-ids": ">=1.23.3"
