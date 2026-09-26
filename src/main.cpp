@@ -14,10 +14,10 @@ class $modify(CreatorLayer) {
         auto menu = this->getChildByID("creator-buttons-menu");
         if (!menu) return true;
 
-        auto sprmappacks = CCSprite::createWithSpriteFrameName("HallOfFame.png"_spr);
+        auto sprMapPacks = CCSprite::createWithSpriteFrameName("HallOfFame.png"_spr);
 
         std::map<std::string, CCSprite*> idsToBtns = {
-            { "map-packs-button", sprmappacks },
+            { "map-packs-button", sprMapPacks },
         };
 
         for (auto& pair : idsToBtns) {
@@ -56,18 +56,26 @@ class $modify(LevelBrowserLayer) {
         if (!LevelBrowserLayer::init(search)) return false;
 
         if (search && search->m_searchType == SearchType::HallOfFame) {
-            if (auto label = this->getChildByType<CCLabelBMFont>(0)) {
+            if (auto label = this->getChildByType<CCLabelBMFont>(0))
                 label->setVisible(false);
+
+            if (auto list = this->m_list) {
+                for (auto child : CCArrayExt<CCNode*>(list->getChildren())) {
+                    if (typeinfo_cast<CCLabelBMFont*>(child) ||
+                        typeinfo_cast<CCSprite*>(child) ||
+                        typeinfo_cast<CCScale9Sprite*>(child) ||
+                        typeinfo_cast<CCLayerColor*>(child)) {
+                        child->setVisible(false);
+                    }
+                }
             }
 
-            auto title = CCSprite::create("HallTitle.png");
-            if (title) {
+            if (auto title = CCSprite::create("HallTitle.png"_spr)) {
                 auto winSize = CCDirector::get()->getWinSize();
                 title->setPosition({winSize.width / 2.f, winSize.height - 25.f});
-                this->addChild(title, 10);
+                this->addChild(title, 100);
             }
         }
-
         return true;
     }
 };
