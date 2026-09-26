@@ -1,25 +1,28 @@
 {
-	"geode": "5.9.0",
-	"gd": {
-		"mac": "2.2081",
-		"android": "2.2081",
-		"win": "2.2081"
-	},
-	"version": "v1.2.1",
-	"id": "proplat.halloffame",
-	"name": "Hall of Fame",
-	"developer": "Hall of Fame",
-	"description": "Replaces the Map Packs button by Hall of Fame one.",
-	"tags": ["customization", "online"],
-	"links": {
-        "source": "https://github.com/ProPlat28/Hall-of-Fame"
-    },
-	"dependencies": {
-		"geode.node-ids": ">=1.23.3"
-	},
-	"resources": {
-		"sprites": [
-			"resources/*.png"
-		]
-	}
+  "geode": "5.9.0",
+  "gd": {
+    "mac": "2.2081",
+    "android": "2.2081",
+    "win": "2.2081"
+  },
+  "version": "v1.0.0",
+  "id": "proplat.halloffame",
+  "name": "Hall of Fame",
+  "developer": "Hall of Fame",
+  "description": "Replaces the Map Packs button by Hall of Fame one.",
+  "tags": [
+    "customization",
+    "online"
+  ],
+  "links": {
+    "source": "https://github.com/ProPlat28/Hall-of-Fame"
+  },
+  "dependencies": {
+    "geode.node-ids": ">=1.23.3"
+  },
+  "resources": {
+    "sprites": [
+      "resources/*.png"
+    ]
+  }
 }
