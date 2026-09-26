@@ -10,11 +10,14 @@
 	"name": "Hall of Fame",
 	"developer": "Hall of Fame",
 	"description": "Replaces the Map Packs button by Hall of Fame one.",
-	"tags": ["customization", "offline"],
+	"tags": ["customization", "online"],
+	"links": {
+        "source": "https://github.com/ProPlat28/Hall-of-Fame"
+    },
 	"dependencies": [
 		{
 			"id": "geode.node-ids",
-			"version": ">=v1.8.1",
+			"version": ">=v1.23.3",
 			"importance": "required"
 		}
 	],
