@@ -23,8 +23,7 @@
 	],
 	"resources": {
 		"sprites": [
-			"resources/HallTitle.png",
-			"resources/HallOfFame.png"
+			"resources/*.png"
 		]
 	}
 }
